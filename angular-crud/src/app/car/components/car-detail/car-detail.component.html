@@ -1,0 +1,9 @@
+
+<mat-card class="example-card">
+    <mat-card-header   *ngIf="car" >
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{car.id}}</mat-card-title>
+      <mat-card-subtitle>{{car.name}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+  <button mat-button color="accent" (click)="back()">Back</button>

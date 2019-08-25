@@ -120,6 +120,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "angular-crud:serve:production"
+            },
+            "fake": {
+              "devServerTarget": "npm run json-server --watch db.json"
             }
           }
         },

@@ -1,0 +1,34 @@
+<table mat-table [dataSource]="cars" class="mat-elevation-z8">
+
+  <!-- <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> No. </th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container> -->
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef>  </th>
+    <td mat-cell *matCellDef="let element">
+    <button mat-button color="primary" (click)="onDetail(element.id)">Detail</button>
+    <button mat-button (click)="onEdit(element)">Edit</button>
+    <button mat-button color="warn" (click)="onRemove(element.id)">Remove</button>
+    </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<button mat-button (click)="onAdd()">Add</button>
+<div *ngIf="editing">
+<app-car-form
+(carListChanged)="changedCarList($event)">
+</app-car-form>
+</div>
+
+
