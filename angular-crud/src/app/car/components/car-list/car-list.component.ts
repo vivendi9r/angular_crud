@@ -44,5 +44,5 @@ public changedCarList(car: Car) {
 
 }
 
-  displayedColumns: string[] = ['name', 'action'];
+  displayedColumns: string[] = ['name', 'model', 'year', 'action'];
 }

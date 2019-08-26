@@ -26,5 +26,5 @@ export class CarDetailComponent implements OnInit {
     this.router.navigate(['']);
 
   }
-  displayedColumns: string[] = ["id", "name"];
+  // displayedColumns: string[] = ["id", "name", "model", "year", ""];
 }

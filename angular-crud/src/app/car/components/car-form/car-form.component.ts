@@ -17,7 +17,7 @@ export class CarFormComponent implements OnInit {
   public onSubmit() {
     if (this.carForm.valid && this.carForm.dirty) {
       this._carService.addCar({name: this.carForm.value.name}).subscribe(x => {
-        this.carListChanged.emit(x)});
+        this.carListChanged.emit(x); });
     }
   }
   ngOnInit() {

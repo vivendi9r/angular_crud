@@ -1,6 +1,9 @@
 <form [formGroup]="carForm" (ngSubmit)="onSubmit()">
   <mat-form-field>
-    <input MatFormFieldControl="name" matInput placeholder="Name" formControlName="name" />
+    <input MatFormFieldControl="name" matInput placeholder="Mark" formControlName="name" />
+  </mat-form-field >
+  <mat-form-field>
+    <input MatFormFieldControl="model" matInput placeholder="Model" formControlName="name" />
   </mat-form-field >
     <button type="submit" mat-button>Done</button>
 <form>

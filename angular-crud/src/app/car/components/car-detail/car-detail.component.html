@@ -4,6 +4,11 @@
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{car.id}}</mat-card-title>
       <mat-card-subtitle>{{car.name}}</mat-card-subtitle>
+      <mat-card-subtitle>{{car.model}}</mat-card-subtitle>
+      <mat-card-subtitle>{{car.year}}</mat-card-subtitle>
+      <mat-card-subtitle>{{car.power}} KM</mat-card-subtitle>
+      <mat-card-subtitle>{{car.lpg ? 'LPG' : 'Petrol'}}</mat-card-subtitle>
+
     </mat-card-header>
   </mat-card>
   <button mat-button color="accent" (click)="back()">Back</button>

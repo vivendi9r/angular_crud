@@ -1,20 +1,28 @@
 {
   "cars": [
     {
-      "name": "Jeden",
-      "id": 1
+      "name": "Daewoo",
+      "id": 2,
+      "model": "Lanos",
+      "year": 1999,
+      "power": 108,
+      "lpg": true
     },
     {
-      "name": "Dwa",
-      "id": 2
+      "name": "Mustang",
+      "id": 3,
+      "model": "GT",
+      "year": 2012,
+      "power": 220,
+      "lpg": false
     },
     {
-      "name": "Trzy",
-      "id": 3
-    },
-    {
-      "name": "Cztery",
-      "id": 4
+      "name": "Fiat",
+      "id": 4,
+      "model": "Punto",
+      "year": 2000,
+      "power": 80,
+      "lpg": true
     }
   ]
 }
